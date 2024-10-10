@@ -1,0 +1,96 @@
+Cafeteria Order System
+
+You are a software developer working for a university cafeteria. The cafeteria wants to automate the process of calculating bills for customers based on the items they purchase. The program should ask the user to input their name, surname, and the number of items they have ordered, along with the price for each item. The program will then calculate the total bill, apply a discount if applicable, and write the customer's details and their total bill to a text file for record-keeping.
+
+Menu:
+
+    Coffee - R15.00
+    Sandwich - R30.00
+    Salad - R25.00
+    Juice - R10.00
+    Muffin - R20.00
+    Pizza Slice - R35.00
+    Soup - R18.00
+    Burger - R40.00
+
+
+Question 1
+
+1.1 Write a C++ program that performs the following tasks:
+
+ 
+
+    Prompt the user to enter their name and surname.
+
+ 
+
+(2 marks)
+
+ 
+
+    Display the menu and prompt the user to select up to 8 items.
+
+ 
+
+(3 marks)
+
+ 
+
+    For each selection, validate the input and calculate the total bill by summing the prices of the selected items.
+
+ 
+
+(4 marks)
+
+ 
+
+    Apply a 10% discount if the total bill exceeds R100.
+
+ 
+
+(3 marks)
+
+ 
+
+    Display the total bill, discount applied (if applicable), and the final bill after discount.
+
+ 
+
+(3 marks)
+
+ 
+
+    Write the customer's name, surname, and the final total bill (after discount if applicable) to a text file named CafeteriaBill.txt.
+
+ 
+
+ (3 marks)
+
+ 
+
+    Display a message indicating that the bill has been written to the file, or display an error message if the file could not be opened.
+
+ 
+
+(2 marks)
+
+ 
+
+Constants:
+
+    const double DISCOUNT_RATE = 0.10; // 10% discount
+    const double DISCOUNT_THRESHOLD = 100.00; // Discount applies if bill is over R100
+
+Menu Prices:
+
+    const double COFFEE_PRICE = 15.00;
+    const double SANDWICH_PRICE = 30.00;
+    const double SALAD_PRICE = 25.00;
+    const double JUICE_PRICE = 10.00;
+    const double MUFFIN_PRICE = 20.00;
+    const double PIZZA_PRICE = 35.00;
+    const double SOUP_PRICE = 18.00;
+    const double BURGER_PRICE = 40.00;
+
+
+
