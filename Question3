@@ -1,0 +1,21 @@
+ 
+
+You are tasked with developing a program that manages the scores of 5 students in a particular subject. The program should allow the user to input the scores, store them in an array, and then perform the following tasks using a loop:
+
+Calculate the average score.
+
+Find the highest and lowest score.
+
+Display all the scores in the order they were entered.
+
+Instructions:
+
+a)    Use an array to store the scores of 5 students.
+
+b)    Use a loop’s to allow the user to input each score and calculate the average score of the class and find the highest and lowest scores.
+
+c)     Display the average, highest, and lowest scores.
+
+d)    Display all the scores in the order they were entered.
+
+Sample Output
