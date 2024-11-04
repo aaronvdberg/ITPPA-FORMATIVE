@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
+#include <random>
+#include <unistd.h>
 using namespace std;
 
 // Account structure to hold account details
@@ -9,7 +10,9 @@ struct Account {
     string name;
     int accountNumber;
     double balance;
+    double initialdeposit;
 };
+ 
 
 // Function prototypes
 void createAccount(Account &account);
@@ -22,7 +25,7 @@ int main() {
     Account account;
     int choice;
     bool isAccountCreated = false; // To check if the account is created
-
+   sleep(1);
     do {
         // Display the menu
         cout << "\n--- Bank Account Management System ---\n" << endl;
@@ -93,8 +96,16 @@ void createAccount(Account &account) {
     cin >> account.name;
     cout << "Enter account number: ";
     cin >> account.accountNumber;
-    account.balance = 0; // Initial balance is 0
-    cout << "Account created successfully!" << endl;
+    cout << "Enter your initial deposit: ";
+    cin >> account.initialdeposit;
+
+    if (account.initialdeposit > 0) {
+        account.balance = account.initialdeposit;
+        cout << "Account created successfully!" << endl;
+    } else {
+        cout << "Please enter a number greater than 0 for the initial deposit." << endl;
+    }
+     sleep(1);
 }
 
 // Function to deposit money
@@ -105,6 +116,7 @@ void depositMoney(Account &account, double amount) {
     } else {
         cout << "Invalid amount. Please enter a positive number." << endl;
     }
+     sleep(1);
 }
 
 // Function to withdraw money
@@ -117,11 +129,13 @@ void withdrawMoney(Account &account, double amount) {
     } else {
         cout << "Invalid amount. Please enter a positive number." << endl;
     }
+     sleep(1);
 }
 
 // Function to check balance
 void checkBalance(const Account &account) {
     cout << "Current balance: R" << account.balance << endl;
+     sleep(1);
 }
 
 // Function to display account details
@@ -130,4 +144,5 @@ void displayAccountDetails(const Account &account) {
     cout << "Name: " << account.name << endl;
     cout << "Account Number: " << account.accountNumber << endl;
     cout << "Balance: R" << account.balance << endl;
+     sleep(1);
 }
