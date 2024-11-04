@@ -79,7 +79,7 @@ int main() {
                 }
                 break;
             case 6:
-                cout << "Exiting the program. Goodbye!" << endl;
+                cout << "Exiting the system. Goodbye!" << endl;
                 break;
             default:
                 cout << "Invalid selection. Please choose a number from 1 to 6.\n";
